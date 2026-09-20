@@ -1,0 +1,7 @@
+Study Tasks
+
+1. Complete Data Structures notes
+2. Practice Java programs
+3. Learn basic Git commands
+4. Complete GitHub mini project
+5. Revise for lab viva
