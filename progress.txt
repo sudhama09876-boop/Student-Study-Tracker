@@ -1,0 +1,9 @@
+Project Progress
+
+[✓] Created GitHub repository
+[✓] Added students.txt
+[✓] Added tasks.txt
+[ ] Learn Git commands
+[ ] Make changes using Git
+[ ] Push changes to GitHub
+[ ] Complete mini project
