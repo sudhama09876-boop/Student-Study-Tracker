@@ -1,0 +1,5 @@
+Student Study Tracker
+
+Student 1: Study Data Structures
+Student 2: Study Java
+Student 3: Practice Git and GitHub
