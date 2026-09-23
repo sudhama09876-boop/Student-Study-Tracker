@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Study Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+
+        <body>
+
+            <h1>Student Study Tracker</h1>
+
+                <h2>My Study Tasks</h2>
+
+                    <div>
+                            <input type="text" id="taskInput" placeholder="Enter a new task">
+                                    <button onclick="addTask()">Add Task</button>
+                                        </div>
+
+                                            <ul id="taskList">
+
+                                                    <li>
+                                                                <label>
+                                                                                <input type="checkbox" onchange="updateProgress()">
+                                                                                                Complete Data Structures notes
+                                                                                                            </label>
+                                                                                                                    </li>
+
+                                                                                                                            <li>
+                                                                                                                                        <label>
+                                                                                                                                                        <input type="checkbox" onchange="updateProgress()">
+                                                                                                                                                                        Practice Java programs
+                                                                                                                                                                                    </label>
+                                                                                                                                                                                            </li>
+
+                                                                                                                                                                                                    <li>
+                                                                                                                                                                                                                <label>
+                                                                                                                                                                                                                                <input type="checkbox" onchange="updateProgress()">
+                                                                                                                                                                                                                                                Learn Git and GitHub
+                                                                                                                                                                                                                                                            </label>
+                                                                                                                                                                                                                                                                    </li>
+
+                                                                                                                                                                                                                                                                            <li>
+                                                                                                                                                                                                                                                                                        <label>
+                                                                                                                                                                                                                                                                                                        <input type="checkbox" onchange="updateProgress()">
+                                                                                                                                                                                                                                                                                                                        Prepare for lab viva
+                                                                                                                                                                                                                                                                                                                                    </label>
+                                                                                                                                                                                                                                                                                                                                            </li>
+
+                                                                                                                                                                                                                                                                                                                                                </ul>
+
+                                                                                                                                                                                                                                                                                                                                                    <h2>Progress</h2>
+
+                                                                                                                                                                                                                                                                                                                                                        <p id="progressText">0% Completed</p>
+
+                                                                                                                                                                                                                                                                                                                                                            <script src="script.js"></script>
+
+                                                                                                                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                                                                                                                            </html>
