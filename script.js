@@ -11,12 +11,13 @@ function addTask() {
 
                                                 let newTask = document.createElement("li");
 
-                                                    newTask.innerHTML = `
+                                                        newTask.innerHTML = `
                                                             <label>
-                                                                        <input type="checkbox" onchange="updateProgress()">
-                                                                                    ${taskText}
-                                                                                            </label>
-                                                                                                `;
+                                                                <input type="checkbox" onchange="updateProgress()">
+                                                                        ${taskText}
+                                                                            </label>
+                                                                            <button class="remove-button" onclick="removeTask(this)" disabled>Remove</button>
+                                                                            `;
 
                                                                                                     taskList.appendChild(newTask);
 
@@ -40,6 +41,15 @@ function addTask() {
 
                                                                                                                                                                 let percentage = total === 0 ? 0 : Math.round((completed / total) * 100);
 
-                                                                                                                                                                    document.getElementById("progressText").textContent =
+                                                                                                                                                                        document.getElementById("progressText").textContent =
                                                                                                                                                                             percentage + "% Completed";
+
+                                                                                                                                                                        checkboxes.forEach(function(checkbox) {
+                                                                                                                                                                            checkbox.closest("li").querySelector(".remove-button").disabled = !checkbox.checked;
+                                                                                                                                                                        });
                                                                                                                                                                             }
+
+                                                                                                                                                                            function removeTask(button) {
+                                                                                                                                                                            button.closest("li").remove();
+                                                                                                                                                                                updateProgress();
+                                                                                                                                                                                }
